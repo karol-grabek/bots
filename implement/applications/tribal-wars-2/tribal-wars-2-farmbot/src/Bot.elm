@@ -555,7 +555,7 @@ decideNextAction { lastPageLocation } stateBefore =
                                                             )
 
                                                         RestartWebBrowser ->
-                                                            ( BotFramework.RestartWebBrowser { pageGoToUrl = lastPageLocation }
+                                                            ( BotFramework.RestartWebBrowser { pageGoToUrl = Just "https://pl.tribalwars2.com/game.php?world=pl50&character_id=815937" }
                                                             , { stateBefore
                                                                 | lastReloadPageTimeInSeconds = Just (stateBefore.timeInMilliseconds // 1000)
                                                                 , reloadPageCount = stateBefore.reloadPageCount + 1
