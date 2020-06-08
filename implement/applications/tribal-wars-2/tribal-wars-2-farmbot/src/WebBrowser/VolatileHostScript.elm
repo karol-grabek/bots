@@ -102,7 +102,7 @@ Response request(Request request)
     {
         KillPreviousWebBrowserProcesses();
 
-        StartBrowser(request.StartWebBrowserRequest.pageGoToUrl).Wait();
+        StartBrowser("https://pl.tribalwars2.com/game.php?new_player=1&world=pl51&character_id=815937").Wait();
 
         return new Response
         {
